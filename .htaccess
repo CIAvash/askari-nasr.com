@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^askari-nasr.com$ [NC]
+RewriteRule ^(.*)$ http://askari-nasr.com/$1 [L,R=301]
